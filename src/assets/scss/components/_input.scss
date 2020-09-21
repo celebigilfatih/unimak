@@ -1,0 +1,11 @@
+input, textarea {
+
+    border: none;
+    padding: 1rem;
+
+}
+
+input:focus, textarea:focus {
+
+    outline: .1rem solid var(--primary-color);
+}

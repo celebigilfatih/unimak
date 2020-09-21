@@ -1,0 +1,57 @@
+.contacts {
+
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    
+}
+
+.information {
+
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 7rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    &__link {
+        color: var(--color-white);
+    }
+
+    &__icon {
+
+        width: 6rem;
+        height: 6rem;
+        border: .3rem solid var(--primary-color);
+        border-radius: 50%;
+        fill: var(--primary-color);
+        padding: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.maps {
+
+    background: url('../images/process.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &__overlay {
+
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: var(--primary-color);
+    }
+}
+
+#map {
+
+    height: 90%;
+    width: 100%;
+    z-index: 90;
+    border: 1rem solid var(--primary-color);
+}

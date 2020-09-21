@@ -1,0 +1,62 @@
+%btn {
+
+
+    font-size: 1.5rem;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    transition: all ease .3s;
+
+
+}
+
+.btn__primary {
+
+    @extend %btn;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    border-radius: 5rem;
+
+    &:hover {
+
+        color: var(--color-dark);
+        transform: translateY(-.5rem);
+
+    }
+
+}
+.btn__secondary {
+
+    @extend %btn;
+    background: var(--color-white);
+    border-radius: 5rem;
+    &:hover {
+
+        color: var(--primary-color);
+        transform: translateY(-.5rem);
+
+    }
+}
+
+
+
+.btn__white {
+
+    background-color: var(--color-white);
+}
+
+.btn__dark {
+
+    @extend %btn;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    border: none;
+
+    &:hover {
+
+        color: var(--primary-color);
+        transform: translateY(-.5rem);
+
+    }
+
+}

@@ -1,0 +1,18 @@
+.breadcrumb {
+
+    &__area {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 27rem;
+        height: 100%;
+    }
+
+    &__aboutus {
+
+        background: url('../images/aboutus-unimak.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}

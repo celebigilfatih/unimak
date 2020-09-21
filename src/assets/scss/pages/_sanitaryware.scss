@@ -1,0 +1,38 @@
+.sanitaryware {
+
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    h5 {
+
+        font-weight: 600;
+    }
+
+    &__capsul {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-template-rows: repeat(9, 15rem);
+        grid-gap: 3rem;
+    }
+
+    &__part {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content 1fr;
+        padding: 2rem;
+        box-shadow: 2px 2px 8px rgba(0,0,0,.15);
+
+
+        span {
+
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        a {
+
+            align-self: flex-end;
+        }
+    }
+}

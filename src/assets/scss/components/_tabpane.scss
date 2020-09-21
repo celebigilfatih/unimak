@@ -1,0 +1,14 @@
+.nav-pills .nav-link {
+
+    border-radius: .25rem;
+    background: var(--color-grey-light);
+    font-weight: 600;
+    padding: 2rem 5rem;
+    letter-spacing: .1rem;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+    background: var(--primary-color);
+}

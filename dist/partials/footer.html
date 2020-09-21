@@ -1,0 +1,118 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row py-5">
+          <div class="col-12 col-md-4 col-sm-4 col-lg-4 col-xl-4">
+            <h5 class="heading__6 heading__6--grey">CONTACT</h5>
+            <p class="paragraph paragraph__white">If you have any questions or need help, feel free to contact with our company.</p>
+            
+            <a class="footer__link" href="tel:+902242812225">
+              <svg class="footer__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-phone"> </use>
+              </svg>
+              +90 224 281 22 25
+            </a>
+            <a class="footer__link" href="mailto:info@unimak.com">
+              <svg class="footer__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-fax"> </use>
+              </svg>
+              +90 224 281 22 30
+            </a>
+            <a class="footer__link" href="https://goo.gl/maps/yh8ykpvMUTm7oLpa9">
+              <svg class="footer__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-map"></use>
+              </svg>
+              <address>
+                Ahmetbey Mahallesi, Nilüfer Cd. No:128
+                16370 Osmangazi
+                <br> Bursa / TURKEY 
+              </address>
+            </a>
+          </div>
+          <div class="col-12 col-md-2 col-sm-2 col-lg-2 col-xl-2">
+            <h5 class="heading__6 heading__6--grey">COMPANY</h5>
+            <a class="footer__link" href="#">History</a>
+            <a class="footer__link" href="#">Values</a>
+            <a class="footer__link" href="#">Fact & Figures</a>
+            <a class="footer__link" href="#">Mission & Vision</a>
+            <a class="footer__link" href="#">Group Compnies</a>
+            <a class="footer__link" href="#">Quality Policy</a>
+            <a class="footer__link" href="#">Features</a>
+            <a class="footer__link" href="#">News</a>
+          </div>
+          <div class="col-12 col-md-2 col-sm-2 col-lg-2 col-xl-2">
+            <h5 class="heading__6 heading__6--grey">AUTOMOTIVE</h5>
+          </div>
+          <div class="col-12 col-md-2 col-sm-2 col-lg-2 col-xl-2">
+            <h5 class="heading__6 heading__6--grey">CERAMICS</h5>
+            <a href="" class="footer__link">Sanitary Ware</a>
+            <a href="" class="footer__link">Model Development</a>
+            <a href="" class="footer__link">Roof Tile & Brick</a>
+            <a href="" class="footer__link">Table Ware</a>
+            <a href="" class="footer__link">Technical Ceramics</a>
+            <a href="" class="footer__link">Spare Parts & Service</a>
+          </div>
+          <div class="col-12 col-md-2 col-sm-2 col-lg-2 col-xl-2">
+            <h5 class="heading__6 heading__6--grey">ACADEMY</h5>
+            <a href="" class="footer__link">Industry 4.0</a>
+            <a href="" class="footer__link">Pilot Plant</a>
+            <a href="" class="footer__link">Process Training</a>
+            <a href="" class="footer__link">Sam Coperation</a>
+            <a href="" class="footer__link">Reisn Mould Know How</a>
+            <a href="" class="footer__link">Know How Book</a>
+            <a href="" class="footer__link">Spagless Know How</a>
+          </div>
+
+        </div>
+        <div class="footer__bottom">
+            <a href="">
+                <img class="footer__logo" src="assets/images/unimak__logo.png" alt="">
+            </a>
+            <div class="footer__terms">
+                <a href="" class="footer__bottom--link">Terms & Conditions</a>
+                <a href="" class="footer__bottom--link">Privarcy Policy</a>
+                <a href="" class="footer__bottom--link">All right reserved</a>
+                <a href="" class="footer__bottom--link">Copyright 2020</a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/timeline.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIjwV79CB-th40_PylUyevE-ixkZ-oY2U&amp;callback=initMap" async="" defer=""></script>
+
+<script>
+var marker;
+
+function initMap() {
+var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: {lat: 51.4552743, lng: -0.3088407},
+
+        });
+
+
+
+        marker = new google.maps.Marker({
+        map: map,
+        draggable: true,
+        animation: google.maps.Animation.DROP,
+        position: {lat: 51.4552743, lng: -0.3088407}
+        });
+        marker.addListener('click', toggleBounce);
+    }
+    
+
+        function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+        }
+</script>
+
+</html>

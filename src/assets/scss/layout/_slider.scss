@@ -1,0 +1,65 @@
+.slider{
+
+    &__item {
+
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        grid-template-rows: repeat(3, min-content);
+        grid-column-gap: 3rem;
+
+        @include respond("phone") {
+
+            grid-template-columns: 1fr;
+            grid-row-gap: 2rem;
+        }
+
+    }
+    &__images {
+
+
+        grid-column: 2 / -1;
+        grid-row: 1 / -1;
+
+
+
+       @include respond("phone") {
+
+        grid-row: 4 / -1;
+        grid-column: auto;
+        justify-self: center;
+        transform: translateY(10rem);
+
+        img {
+            
+            width: 40rem;
+        }
+       }
+
+
+
+    }
+
+    &__link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+
+        font-size: 7.5rem;
+        font-weight: 600;
+        color: var(--color-white);
+
+        @include respond("phone") {
+
+            font-size: 4.5rem;
+        }
+    }
+
+    &__paragraph {
+
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: var(--color-white);
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./abstracts/normalize";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./base/typography";
+@import "./abstracts/variables";
+
+@import "./base/animations";
+@import "./base/base";
+@import "./base/utilities";
+
+@import "./components/button";
+@import "./components/breadcrumbs";
+@import "./components/composition";
+@import "./components/input";
+@import "./components/form";
+@import "./components/popup";
+@import "./components/timeline";
+@import "./components/_indicator";
+@import "./components/_tabpane";
+
+@import "./layout/features";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/layouts";
+@import "./layout/navigation";
+@import "./layout/notice";
+@import "./layout/slider";
+
+@import "./pages/home";
+@import "./pages/news-detail";
+@import "./pages/contacts";
+@import "./pages/ceramics";
+@import "./pages/sanitaryware";
+@import "./pages/quality-policy";
+@import "./vendor/flickity.scss";
+@import "./vendor/swiper";
+
+
+
+
+
+
