@@ -1,0 +1,14 @@
+.group {
+
+    &__compaines {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        &--union {
+            box-shadow: var(--shadow);
+        }
+        &--trade {
+            box-shadow: var(--shadow);
+        }
+    }
+}

@@ -18,6 +18,7 @@
 @import "./components/timeline";
 @import "./components/_indicator";
 @import "./components/_tabpane";
+@import "./components/_table";
 
 @import "./layout/features";
 @import "./layout/footer";
@@ -28,11 +29,14 @@
 @import "./layout/slider";
 
 @import "./pages/home";
+@import "./pages/aboutus";
 @import "./pages/news-detail";
 @import "./pages/contacts";
 @import "./pages/ceramics";
 @import "./pages/sanitaryware";
 @import "./pages/quality-policy";
+@import "./pages/group__compaines";
+@import "./pages/preparation";
 @import "./vendor/flickity.scss";
 @import "./vendor/swiper";
 

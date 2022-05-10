@@ -79,8 +79,22 @@
 
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/timeline.js"></script>
+<script src="assets/js/flickity.min.js"></script>
 <script src="assets/js/app.js"></script>
+<script>
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
+});
+</script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIjwV79CB-th40_PylUyevE-ixkZ-oY2U&amp;callback=initMap" async="" defer=""></script>
 
@@ -114,5 +128,6 @@ var map = new google.maps.Map(document.getElementById('map'), {
         }
         }
 </script>
+
 
 </html>

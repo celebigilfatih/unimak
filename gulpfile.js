@@ -21,7 +21,7 @@ const gulp                      = require('gulp'),
 gulp.task('clear', () => del([ dist_folder ]));
 
 gulp.task('html', () => {
-  return gulp.src([ src_folder + '**/*.html' ], {
+  return gulp.src([ src_folder + '/src/**/*.html' ], {
     base: src_folder,
     since: gulp.lastRun('html')
   })

@@ -128,14 +128,15 @@ a {
     &__heading {
 
         color: var(--color-white);
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: repeat(2, min-content);
         align-self: end;
         }
 
     &__title {
 
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 600;
         color: var(--color-white)
     }
@@ -144,5 +145,6 @@ a {
 
         margin-bottom: 1rem;
         color: var(--color-white);
+        grid-column: 1 / -1;
     }
 }

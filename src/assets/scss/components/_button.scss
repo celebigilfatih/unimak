@@ -19,12 +19,14 @@
 
     &:hover {
 
-        color: var(--color-dark);
+        color: var(--color-white);
         transform: translateY(-.5rem);
+        background-color: var(--color-dark);
 
     }
 
 }
+
 .btn__secondary {
 
     @extend %btn;
@@ -34,10 +36,26 @@
 
         color: var(--primary-color);
         transform: translateY(-.5rem);
+        background-color: var(--color-grey);
 
     }
 }
 
+.btn__dark {
+
+    @extend %btn;
+    background: var(--color-dark);
+    border-radius: 5rem;
+    color: var(--color-white);
+    &:hover {
+
+        color: var(--color-white);
+        background-color: var(--color-grey);
+
+        transform: translateY(-.5rem);
+
+    }
+}
 
 
 .btn__white {
@@ -45,18 +63,3 @@
     background-color: var(--color-white);
 }
 
-.btn__dark {
-
-    @extend %btn;
-    color: var(--color-white);
-    background-color: var(--color-dark);
-    border: none;
-
-    &:hover {
-
-        color: var(--primary-color);
-        transform: translateY(-.5rem);
-
-    }
-
-}
