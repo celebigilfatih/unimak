@@ -68,13 +68,9 @@
   }
   &__text {
     background-color: var(--primary-color);
-    padding: 2rem 4rem 5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content max-content 5rem;
-    @include respond("phone") {
-      grid-column: 1 / -1;
-    }
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
   }
   &__box {
     align-self: center;
