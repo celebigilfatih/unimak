@@ -1,1 +1,1 @@
-{"version":3,"sources":["pages/aboutus.scss"],"names":[],"mappings":"AAAA,SAGI,YAAA,MACA,eAAA","file":"aboutus.css","sourcesContent":[".history {\r\n\r\n\r\n    padding-top:10rem;\r\n    padding-bottom: 10rem;\r\n}"]}
+{"version":3,"sources":["pages/aboutus.scss"],"names":[],"mappings":"AAAA,SAGI,YAAA,MACA,eAAA","file":"aboutus.css","sourcesContent":[".history {\n\n\n    padding-top:10rem;\n    padding-bottom: 10rem;\n}"]}

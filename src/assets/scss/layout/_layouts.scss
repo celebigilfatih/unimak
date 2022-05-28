@@ -1,109 +1,84 @@
 .slider {
+  grid-column: full-start / full-end;
+  background: url(../images/slider1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    grid-column: full-start / full-end;    
-    background: url(../images/slider1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75vh;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
 }
 
 .aboutus {
-
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .ceramic {
-
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: var(--color-grey-light);
 }
 
-
 .automotive {
-
-    grid-column: full-start / full-end;
-    background: var(--color-grey-light);
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-
-
+  grid-column: full-start / full-end;
+  background: var(--color-grey-light);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .process {
-
-    display: grid;
-    grid-template-columns: minmax(min-content, 1fr) minmax(max-content, 1fr);
-    grid-template-rows: 45rem;
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) minmax(max-content, 1fr);
+  grid-template-rows: 45rem;
 }
 
 .newsgroup {
-
-    
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-
-
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .media {
+  background: url("../images/media.jpg");
+  height: 45rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
-    background: url('../images/media.jpg');
-    height: 45rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-
-    @include respond("phone") {
-
-        height: 35rem;
-    }
-
+  @include respond("phone") {
+    height: 35rem;
+  }
 }
 
 .fact {
-
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-top: 0.5rem solid var(--primary-color);
+  background: url("../images/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    border-top: .5rem solid var(--primary-color);
-    background: url('../images/contact.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    height: 40rem;
-
+  height: 40rem;
 }
 
 .support {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  transform: translateY(-15rem);
 
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    transform: translateY(-15rem);
+  @include respond("phone") {
+    transform: translateY(-10rem);
+  }
 
-    @include respond("phone") {
-        transform: translateY(-10rem);
-    }
-
-    &__portal {
-        background: url('../images/support__bg.jpg'), var(--primary-color);
-        background-blend-mode: soft-light;
-    }
+  &__portal {
+    background: url("../images/support__bg.jpg"), var(--primary-color);
+    background-blend-mode: soft-light;
+  }
 }
-
-
-
-

@@ -1,65 +1,56 @@
 %btn {
-
-
-    font-size: 1.5rem;
-    padding: 1.5rem 4rem;
-    text-decoration: none;
-    letter-spacing: .1rem;
-    transition: all ease .3s;
-
-
+  font-size: 1.5rem;
+  padding: 1.5rem 4rem;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  transition: all ease 0.3s;
 }
 
 .btn__primary {
+  @extend %btn;
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  border-radius: 5rem;
 
-    @extend %btn;
-    background-color: var(--primary-color);
+  &:hover {
     color: var(--color-white);
-    border-radius: 5rem;
-
-    &:hover {
-
-        color: var(--color-white);
-        transform: translateY(-.5rem);
-        background-color: var(--color-dark);
-
-    }
-
+    transform: translateY(-0.5rem);
+    background-color: var(--color-dark);
+  }
 }
 
 .btn__secondary {
-
-    @extend %btn;
-    background: var(--color-white);
-    border-radius: 5rem;
-    &:hover {
-
-        color: var(--primary-color);
-        transform: translateY(-.5rem);
-        background-color: var(--color-grey);
-
-    }
+  @extend %btn;
+  background: var(--color-white);
+  border-radius: 5rem;
+  &:hover {
+    color: var(--primary-color);
+    transform: translateY(-0.5rem);
+    background-color: var(--color-grey);
+  }
 }
 
 .btn__dark {
-
-    @extend %btn;
-    background: var(--color-dark);
-    border-radius: 5rem;
+  @extend %btn;
+  background: var(--color-dark);
+  border-radius: 5rem;
+  color: var(--color-white);
+  &:hover {
     color: var(--color-white);
-    &:hover {
-
-        color: var(--color-white);
-        background-color: var(--color-grey);
-
-        transform: translateY(-.5rem);
-
-    }
+    background-color: var(--color-grey);
+    transform: translateY(-0.5rem);
+  }
 }
-
 
 .btn__white {
-
-    background-color: var(--color-white);
+  background-color: var(--color-white);
 }
 
+.btn__orange {
+  @extend %btn;
+  padding: 0.5rem 2rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+  color: var(--primary-color);
+  animation: pulse 2s infinite;
+}

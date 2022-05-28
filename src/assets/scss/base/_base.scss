@@ -1,62 +1,47 @@
 *,
 *::before,
 *::after {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 
-    @include respond("phone") {
-
-        font-size: 50%;
-        
-    }
+  @include respond("phone") {
+    font-size: 50%;
+  }
 }
 
 body {
-
-    font-family: var(--font-primary);
-    font-size: var(--font-size);
-    font-weight: 300;
-    overflow-x: hidden;
+  font-family: var(--font-primary);
+  font-size: var(--font-size);
+  font-weight: 300;
+  overflow-x: hidden;
 }
 
-
 .grid__container {
-
-    display: grid;
-    grid-template-rows: 7rem 80vh repeat(8, max-content) 50rem;
-    grid-template-columns: [full-start] 1fr [center-start] repeat(10, [col-start] minmax(min-content, 13rem) [col-end]) [center-end] 1fr [full-end];
-
+  display: grid;
+  grid-template-rows: 7rem 80vh repeat(8, max-content) 50rem;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(
+      10,
+      [col-start] minmax(min-content, 13rem) [col-end]
+    ) [center-end] 1fr [full-end];
 }
 
 .container {
-
-    max-width: 130rem;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
+  max-width: 150rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gc__1 {
-
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 ul {
-
-    list-style-type: none;
-    
+  list-style-type: none;
 }
-
-
-
-
-

@@ -1,82 +1,70 @@
 :root {
-
-  --font-primary: 'Poppins', sans-serif;
+  --font-primary: "Poppins", sans-serif;
   --font-size: 1.5rem;
-  --primary-color: #ED6E00;
+  --primary-color: #ed6e00;
   --color-white: #fff;
   --color-grey: #676767;
-  --color-grey-light: #e7e7e7;
+  --color-grey-light: #f7f7f7;
   --color-dark: #090909;
   --bp-large-desktop: 75em;
   --bp-desktop: 62.5em;
   --bp-medium: 50em;
   --bp-phone: 37.5em;
   --shadow: 2px 2px 8px rgb(0 0 0 / 15%);
-    
 }
-
 
 .white-color {
-
-    color: var(--white-color);
+  color: var(--white-color);
 }
 .dark-color {
-
   color: var(--color-dark);
 }
- 
-.grey-color {
 
+.grey-color {
   color: var(--color-grey);
 }
 .unimak {
-
   position: relative;
   width: 9rem;
   height: 2rem;
-  
-    &__link {
 
-      font-size: 1.5rem;
-      color: var(--color-dark);
-      font-weight: 400;
-      z-index: 99;
-      display: flex;
-      align-items: center;
-      transition: 0.4s all ease;
-      text-decoration: underline;
-      font-weight: 600;
-
-    }
-
+  &__link {
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    font-weight: 400;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    transition: 0.4s all ease;
+    text-decoration: underline;
+    font-weight: 600;
+  }
 }
 .capsul__xs {
+  position: relative;
+  z-index: 10;
 
-    position: relative;
-    z-index: 10;
-
-    &:before {
-      position: absolute;
-      content: '';
-      width: 0;
-      height: 2rem;
-      transition: 0.4s all ease;
-      background: var(--primary-color);
-      left: 0;
-      z-index: -1;
-      border-radius: 2rem;
-    }
-    &:hover .unimak__link{
-      color: white;
-      padding-left: 1rem;
-    }
-    &:hover:before {
-      width: 100%;
-      transition: 0.4s all ease;
-    }
-
+  &:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2rem;
+    transition: 0.4s all ease;
+    background: var(--primary-color);
+    left: 0;
+    z-index: -1;
+    border-radius: 2rem;
+  }
+  &:hover .unimak__link {
+    color: white;
+    padding-left: 1rem;
+  }
+  &:hover:before {
+    width: 100%;
+    transition: 0.4s all ease;
+  }
 }
-.capsul__sm{
+.capsul__sm {
   width: 13rem;
   height: 4rem;
   border-left: 0.25rem solid var(--primary-color);
@@ -85,13 +73,10 @@
   justify-content: center;
   align-content: center;
   grid-column: 1 / -1;
-  
-
-
 
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     width: 0;
     height: 2rem;
     transition: 0.4s all ease;
@@ -99,10 +84,9 @@
     left: 0;
     z-index: -1;
   }
-
 }
 
-.capsul__md{
+.capsul__md {
   width: 20rem;
   height: 4rem;
   border-left: 0.25rem solid var(--primary-color);
@@ -113,11 +97,9 @@
   grid-column: 1 / -1;
   margin-bottom: 10rem;
 
-
-
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     width: 0;
     height: 2rem;
     transition: 0.4s all ease;
@@ -125,10 +107,9 @@
     left: 0;
     z-index: -1;
   }
-
 }
 
-.capsul__lg{
+.capsul__lg {
   width: 25rem;
   height: 4rem;
   border-left: 0.25rem solid var(--primary-color);
@@ -139,7 +120,7 @@
 
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     width: 0;
     height: 2rem;
     transition: 0.4s all ease;
@@ -147,26 +128,17 @@
     left: 0;
     z-index: -1;
   }
-
 }
 
 .title {
-
   &__small {
-
     font-size: 1.5rem;
 
-    &--white{
-
+    &--white {
       color: var(--color-white);
-
     }
     &--orange {
       color: var(--primary-color);
     }
-
   }
-
 }
-
-
